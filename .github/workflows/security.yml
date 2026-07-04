@@ -17,7 +17,7 @@ jobs:
           python-version: '3.11'
       - name: Python dependency audit
         run: pip install pip-audit && pip-audit -r requirements.txt
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
       - name: npm audit
